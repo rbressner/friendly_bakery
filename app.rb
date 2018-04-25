@@ -1,5 +1,6 @@
 require 'sinatra'
-
+require 'sendgrid-ruby'
+include SendGrid
 
 get "/" do
 erb :index
@@ -26,7 +27,7 @@ post "/response" do
   from = Email.new(email: 'rachel.bressner@gmail.com')
   to = Email.new(email: 'rachel.bressner@gmail.com')
   subject = 'hi ' + params[:name]
-  content = Content.new(type: 'text/plain', value: 'your comment is ' + params[:comment])
+  content = Content.new(type: 'text/plain', value: 'hi there')
   mail = Mail.new(from, subject, to, content)
 
   sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])

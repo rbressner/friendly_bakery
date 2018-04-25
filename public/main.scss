@@ -48,3 +48,31 @@ h1 {
   margin-right: auto;
   width: 25%;
 }
+.form {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+%inputvalue {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 5px solid black;
+  color: black;
+}
+
+input[type=text]{
+  @extend %inputvalue;
+}
+
+input[type=email] {
+  @extend %inputvalue;
+}
+input[type=submit] {
+  background-color: transparent;
+  width: 30%;
+}
