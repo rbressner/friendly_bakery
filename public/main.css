@@ -3,7 +3,8 @@ li {
   padding: 8px; }
 
 body {
-  background-color: #e6ffe6; }
+  background-color: #e6ffe6;
+  font-family: "Hi Melody", cursive; }
 
 ul {
   float: left;
@@ -20,5 +21,10 @@ ul {
   width: 30%;
   float: right;
   margin-top: 0; }
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*# sourceMappingURL=main.css.map */

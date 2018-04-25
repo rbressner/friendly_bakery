@@ -1,9 +1,17 @@
+$bnw: 'Black And White Picture', sans-serif;
+$melody: 'Hi Melody', cursive;
+$stylish: 'Stylish', sans-serif;
+$patrick: 'Patrick Hand', cursive;
+$mint: #e6ffe6;
+
+
 li {
   list-style-type: none;
   padding: 8px;
 }
 body{
-  background-color: #e6ffe6;
+  background-color: $mint;
+  font-family: $melody;
 }
 ul {
   float: left;
@@ -22,4 +30,10 @@ ul {
   float: right;
   margin-top: 0;
   // position: fixed;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 40%;
 }
