@@ -1,7 +1,7 @@
 
 <form action="/response" method="post" class="form">
   <input type="text" name="name" placeholder="Enter your name" value="<%= @name %>">
-  <input type="email" name="email" placeholder="Enter your email address" value="<%= @email %>">
+  <input type="email" name="email" placeholder="Enter your email address" value="<%= @email %>" id="emailaddress">
   <input type="text" name="content" placeholder="Enter your message" value="<%= @content %>">
-  <input type="submit" value="Go">
+  <input type="submit" value="Go" onclick="empty()">
 </form>

@@ -25,7 +25,7 @@ end
 post "/response" do
 
   from = Email.new(email: 'rachel.bressner@gmail.com')
-  to = Email.new(email: 'rachel.bressner@gmail.com')
+  to = Email.new(email: params[:email])
   subject = 'hi ' + params[:name]
   content = Content.new(type: 'text/plain', value: 'hi there')
   mail = Mail.new(from, subject, to, content)
