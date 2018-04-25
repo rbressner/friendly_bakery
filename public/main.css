@@ -22,4 +22,21 @@ ul {
   float: right;
   margin-top: 0; }
 
+.cookies {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%; }
+
+h1 {
+  text-align: center;
+  font-family: "Patrick Hand", cursive;
+  font-size: 500%; }
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%; }
+
 /*# sourceMappingURL=main.css.map */

@@ -20,3 +20,20 @@ end
 get "/contact" do
   erb :contact
 end
+
+post "/response" do
+
+  from = Email.new(email: 'rachel.bressner@gmail.com')
+  to = Email.new(email: 'rachel.bressner@gmail.com')
+  subject = 'hi ' + params[:name]
+  content = Content.new(type: 'text/plain', value: 'your comment is ' + params[:comment])
+  mail = Mail.new(from, subject, to, content)
+
+  sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
+  response = sg.client.mail._('send').post(request_body: mail.to_json)
+  puts response.status_code
+  puts response.body
+  puts response.headers
+
+  erb :response
+end
