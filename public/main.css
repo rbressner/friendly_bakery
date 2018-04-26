@@ -10,7 +10,7 @@ li:hover {
   display: flex;
   justify-content: center; }
   .main-items img {
-    height: 30%;
+    height: 200px;
     padding: 40px; }
 
 body {
