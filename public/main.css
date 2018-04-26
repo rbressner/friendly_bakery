@@ -6,6 +6,21 @@ li:hover {
   background-color: #e6e6ff;
   border-radius: 50%; }
 
+li .navtext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1; }
+
+li:hover .navtext {
+  visibility: visible; }
+
 @media screen and (max-width: 2000px) and (min-width: 992px) {
   .main-items {
     display: flex;
@@ -192,5 +207,14 @@ input[type=submit] {
 
 .submit:hover {
   cursor: pointer; }
+
+.cookie-real:hover, .cake-real:hover, .muffin-real:hover {
+  animation: grow 1s forwards; }
+
+@keyframes grow {
+  from {
+    height: 200px; }
+  to {
+    height: 230px; } }
 
 /*# sourceMappingURL=main.css.map */

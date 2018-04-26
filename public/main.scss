@@ -14,7 +14,25 @@ li:hover{
   background-color: $lavender;
   border-radius: 50%;
 }
+li {
+  .navtext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
 
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+}
+
+li:hover .navtext {
+    visibility: visible;
+}
 @media screen and (max-width: 2000px) and (min-width: 992px) {
   .main-items {
       display: flex;
@@ -243,4 +261,20 @@ input[type=submit] {
 }
 .submit:hover {
   cursor: pointer;
+}
+%mainanimation {
+  animation: grow 1s forwards;
+}
+.cookie-real:hover {
+  @extend %mainanimation;
+}
+.cake-real:hover {
+  @extend %mainanimation;
+}
+.muffin-real:hover {
+  @extend %mainanimation;
+}
+@keyframes grow {
+  from{height: 200px;}
+  to{height: 230px;}
 }
