@@ -6,13 +6,34 @@ li:hover {
   background-color: #e6e6ff;
   border-radius: 50%; }
 
-.main-items {
-  display: flex;
-  justify-content: center; }
-  .main-items img {
-    height: 200px;
-    padding: 40px; }
-
+@media screen and (max-width: 2000px) and (min-width: 992px) {
+  .main-items {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    font-size: 180%; }
+    .main-items img {
+      height: 200px;
+      padding: 40px; }
+    .main-items .cookie1 {
+      text-align: center;
+      flex-flow: column; }
+    .main-items .cake1 {
+      text-align: center;
+      flex-flow: column; }
+    .main-items .muffin1 {
+      text-align: center;
+      flex-flow: column; } }
+@media screen and (max-width: 992px) {
+  .main-items {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    font-size: 120%;
+    text-align: center; }
+    .main-items img {
+      height: 100px;
+      padding: 40px; } }
 body {
   background-color: #e6ffe6;
   font-family: "Hi Melody", cursive;
