@@ -179,15 +179,18 @@ h1 {
 
 input[type=text], input[type=email] {
   width: 30%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 12px;
   box-sizing: border-box;
   border: none;
   border-bottom: 5px solid black;
   color: black; }
 
 input[type=submit] {
-  background-color: transparent;
-  width: 10%; }
+  background-color: #ffe6e6;
+  width: 10%;
+  border: none; }
+
+.submit:hover {
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

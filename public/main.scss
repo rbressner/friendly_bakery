@@ -222,8 +222,7 @@ h1 {
 
 %inputvalue {
   width: 30%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 12px;
   box-sizing: border-box;
   border: none;
   border-bottom: 5px solid black;
@@ -238,6 +237,10 @@ input[type=email] {
   @extend %inputvalue;
 }
 input[type=submit] {
-  background-color: transparent;
+  background-color: $pink;
   width: 10%;
+  border: none;
+}
+.submit:hover {
+  cursor: pointer;
 }
