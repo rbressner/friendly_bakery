@@ -14,60 +14,45 @@ li:hover{
   background-color: $lavender;
   border-radius: 50%;
 }
-@media screen and (max-width: 2000px) and (min-width: 992px) {
-.main-items {
-    display: flex;
-    justify-content: center;
-    flex-flow: row;
-    font-size: 180%;
-    img {
-      height: 200px;
-      padding: 40px;
-    }
-    .cookie1 {
-      text-align: center;
-      flex-flow: column;
-    }
-    .cake1 {
-      text-align: center;
-      flex-flow: column;
-    }
-    .muffin1 {
-      text-align: center;
-      flex-flow: column;
-    }
-}
-}
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 2000px) and (min-width: 992px) {
   .main-items {
       display: flex;
       justify-content: center;
-      flex-flow: column;
-      font-size: 120%;
-      text-align: center;
+      flex-flow: row;
+      font-size: 180%;
       img {
-        height: 100px;
+        height: 200px;
         padding: 40px;
       }
-    }
-}
-
-@media screen and (max-width: 2000px) and (min-width: 992px) {
+      .cookie1 {
+        text-align: center;
+        flex-flow: column;
+      }
+      .cake1 {
+        text-align: center;
+        flex-flow: column;
+      }
+      .muffin1 {
+        text-align: center;
+        flex-flow: column;
+      }
+  }
 %cookiecontent {
     text-align: center;
     flex-flow: column;
     padding: 10px;
+    border: solid 2px $lavender;
+    width: 25%;
+
   }
 .cookie-items {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    // flex-flow: row;
     font-size: 180%;
     margin-left: auto;
     margin-right: auto;
-    // width: 80%;
     img {
       height: 200px;
       padding: 40px;
@@ -91,9 +76,49 @@ li:hover{
       @extend %cookiecontent;
     }
 }
+.catalogue {
+  height: 900px;
+  display: block;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.catalogue-small{
+  visibility: hidden;
+}
+.center {
+  text-align: center;
+  font-size: 300%;
+}
+  .form {
+    margin: 0;
+    position: absolute;
+    // top: 60%;
+    margin-top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 30px;
+  }
+  .interest {
+    text-align: center;
+    margin-top: 5%;
+  }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (min-width: 0px) {
+  .main-items {
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      font-size: 120%;
+      text-align: center;
+      img {
+        height: 100px;
+        padding: 40px;
+      }
+    }
   .cookie-items {
       display: flex;
       justify-content: center;
@@ -104,6 +129,33 @@ li:hover{
         height: 100px;
         padding: 40px;
       }
+    }
+    .catalogue-small {
+      height: 400px;
+      display: block;
+      margin-top: -300%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .catalogue {
+      // margin-top: -100%;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .center {
+      text-align: center;
+      font-size: 150%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+    .form {
+      margin: 0;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-flow: row;
     }
 }
 
@@ -144,35 +196,8 @@ h1 {
   font-family: $patrick;
   font-size: 500%;
 }
-@media screen and (max-width: 2000px) and (min-width: 992px) {
-  .center {
-    text-align: center;
-    font-size: 300%;
-  }
-    .form {
-      margin: 0;
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-}
-@media screen and (max-width: 992px) {
-  .center {
-    text-align: center;
-    font-size: 150%;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  .form {
-    margin: 0;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-  }
-}
+
+
 .logo {
   display: block;
   margin-left: auto;

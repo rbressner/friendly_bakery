@@ -1,7 +1,12 @@
 
+<img src="catalogue.jpg" class="catalogue">
+<!-- <img src="cataloguemini.jpg" class="catalogue-small"> -->
+
+  <h2 class="interest">Like what you see? Enter your info and we'll send you a copy of our catalogue!</h2>
 <form action="/response" method="post" class="form">
+
   <input type="text" name="name" placeholder="Enter your name" value="<%= @name %>">
   <input type="email" name="email" placeholder="Enter your email address" value="<%= @email %>" id="emailaddress">
   <input type="text" name="content" placeholder="Enter your message" value="<%= @content %>">
-  <input type="submit" value="Go" onclick="empty()">
+  <input type="submit" value="Go" onclick="empty()" class="submit">
 </form>

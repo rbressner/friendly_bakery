@@ -23,8 +23,54 @@ li:hover {
       flex-flow: column; }
     .main-items .muffin1 {
       text-align: center;
-      flex-flow: column; } }
-@media screen and (max-width: 992px) {
+      flex-flow: column; }
+
+  .cookie-items .butterscotch-cookie, .cookie-items .chocolatechip-cookie, .cookie-items .whoopie-cookie, .cookie-items .sandwich-cookie, .cookie-items .sugar-cookie, .cookie-items .whitechip-cookie {
+    text-align: center;
+    flex-flow: column;
+    padding: 10px;
+    border: solid 2px #e6e6ff;
+    width: 25%; }
+
+  .cookie-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 180%;
+    margin-left: auto;
+    margin-right: auto; }
+    .cookie-items img {
+      height: 200px;
+      padding: 40px; }
+
+  .catalogue {
+    height: 900px;
+    display: block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .catalogue-small {
+    visibility: hidden; }
+
+  .center {
+    text-align: center;
+    font-size: 300%; }
+
+  .form {
+    margin: 0;
+    position: absolute;
+    margin-top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 30px; }
+
+  .interest {
+    text-align: center;
+    margin-top: 5%; } }
+@media screen and (max-width: 992px) and (min-width: 0px) {
   .main-items {
     display: flex;
     justify-content: center;
@@ -33,24 +79,8 @@ li:hover {
     text-align: center; }
     .main-items img {
       height: 100px;
-      padding: 40px; } }
-@media screen and (max-width: 2000px) and (min-width: 992px) {
-  .cookie-items .butterscotch-cookie, .cookie-items .chocolatechip-cookie, .cookie-items .whoopie-cookie, .cookie-items .sandwich-cookie, .cookie-items .sugar-cookie, .cookie-items .whitechip-cookie {
-    text-align: center;
-    flex-flow: column;
-    padding: 10px; }
+      padding: 40px; }
 
-  .cookie-items {
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 180%;
-    margin-left: auto;
-    margin-right: auto; }
-    .cookie-items img {
-      height: 200px;
-      padding: 40px; } }
-@media screen and (max-width: 992px) {
   .cookie-items {
     display: flex;
     justify-content: center;
@@ -59,7 +89,33 @@ li:hover {
     text-align: center; }
     .cookie-items img {
       height: 100px;
-      padding: 40px; } }
+      padding: 40px; }
+
+  .catalogue-small {
+    height: 400px;
+    display: block;
+    margin-top: -300%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .catalogue {
+    visibility: hidden;
+    opacity: 0; }
+
+  .center {
+    text-align: center;
+    font-size: 150%;
+    margin-left: 20%;
+    margin-right: 20%; }
+
+  .form {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row; } }
 body {
   background-color: #e6ffe6;
   font-family: "Hi Melody", cursive;
@@ -93,31 +149,6 @@ h1 {
   font-family: "Patrick Hand", cursive;
   font-size: 500%; }
 
-@media screen and (max-width: 2000px) and (min-width: 992px) {
-  .center {
-    text-align: center;
-    font-size: 300%; }
-
-  .form {
-    margin: 0;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%); } }
-@media screen and (max-width: 992px) {
-  .center {
-    text-align: center;
-    font-size: 150%;
-    margin-left: 20%;
-    margin-right: 20%; }
-
-  .form {
-    margin: 0;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex; } }
 .logo {
   display: block;
   margin-left: auto;
