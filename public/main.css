@@ -2,9 +2,22 @@ li {
   list-style-type: none;
   padding: 8px; }
 
+li:hover {
+  background-color: #e6e6ff;
+  border-radius: 50%; }
+
+.main-items {
+  display: flex;
+  justify-content: center; }
+  .main-items img {
+    height: 30%;
+    padding: 40px; }
+
 body {
   background-color: #e6ffe6;
-  font-family: "Hi Melody", cursive; }
+  font-family: "Hi Melody", cursive;
+  background-image: url("sparkles.gif");
+  background-repeat: repeat-x; }
 
 ul {
   float: left;

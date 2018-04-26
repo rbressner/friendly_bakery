@@ -3,15 +3,32 @@ $melody: 'Hi Melody', cursive;
 $stylish: 'Stylish', sans-serif;
 $patrick: 'Patrick Hand', cursive;
 $mint: #e6ffe6;
-
+$lavender: #e6e6ff;
+$pink: #ffe6e6;
 
 li {
   list-style-type: none;
   padding: 8px;
 }
+li:hover{
+  background-color: $lavender;
+  border-radius: 50%;
+}
+.main-items {
+    display: flex;
+    justify-content: center;
+    img {
+      // width: 40%;
+      height: 30%;
+      padding: 40px;
+    }
+}
+
 body{
   background-color: $mint;
   font-family: $melody;
+  background-image: url("sparkles.gif");
+  background-repeat: repeat-x;
 }
 ul {
   float: left;
