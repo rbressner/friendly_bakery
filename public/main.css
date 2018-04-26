@@ -34,6 +34,32 @@ li:hover {
     .main-items img {
       height: 100px;
       padding: 40px; } }
+@media screen and (max-width: 2000px) and (min-width: 992px) {
+  .cookie-items .butterscotch-cookie, .cookie-items .chocolatechip-cookie, .cookie-items .whoopie-cookie, .cookie-items .sandwich-cookie, .cookie-items .sugar-cookie, .cookie-items .whitechip-cookie {
+    text-align: center;
+    flex-flow: column;
+    padding: 10px; }
+
+  .cookie-items {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 180%;
+    margin-left: auto;
+    margin-right: auto; }
+    .cookie-items img {
+      height: 200px;
+      padding: 40px; } }
+@media screen and (max-width: 992px) {
+  .cookie-items {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    font-size: 120%;
+    text-align: center; }
+    .cookie-items img {
+      height: 100px;
+      padding: 40px; } }
 body {
   background-color: #e6ffe6;
   font-family: "Hi Melody", cursive;

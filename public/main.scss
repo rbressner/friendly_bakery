@@ -53,12 +53,68 @@ li:hover{
     }
 }
 
+@media screen and (max-width: 2000px) and (min-width: 992px) {
+%cookiecontent {
+    text-align: center;
+    flex-flow: column;
+    padding: 10px;
+  }
+.cookie-items {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // flex-flow: row;
+    font-size: 180%;
+    margin-left: auto;
+    margin-right: auto;
+    // width: 80%;
+    img {
+      height: 200px;
+      padding: 40px;
+    }
+    .butterscotch-cookie {
+      @extend %cookiecontent;
+    }
+    .chocolatechip-cookie {
+      @extend %cookiecontent;
+    }
+    .whoopie-cookie {
+      @extend %cookiecontent;
+    }
+    .sandwich-cookie {
+      @extend %cookiecontent;
+    }
+    .sugar-cookie {
+      @extend %cookiecontent;
+    }
+    .whitechip-cookie {
+      @extend %cookiecontent;
+    }
+}
+}
+
+@media screen and (max-width: 992px) {
+  .cookie-items {
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      font-size: 120%;
+      text-align: center;
+      img {
+        height: 100px;
+        padding: 40px;
+      }
+    }
+}
+
 body{
   background-color: $mint;
   font-family: $melody;
   background-image: url("sparkles.gif");
   background-repeat: repeat-x;
+  // background-position: 50% -40%;
 }
+
 ul {
   float: left;
   position: fixed;
