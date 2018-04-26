@@ -25,7 +25,7 @@ li:hover {
       text-align: center;
       flex-flow: column; }
 
-  .cookie-items .butterscotch-cookie, .cookie-items .chocolatechip-cookie, .cookie-items .whoopie-cookie, .cookie-items .sandwich-cookie, .cookie-items .sugar-cookie, .cookie-items .whitechip-cookie {
+  .cookie-items .cookie-thing, .cake-items .cake-thing, .cupcake-items .cupcake-thing {
     text-align: center;
     flex-flow: column;
     padding: 10px;
@@ -40,6 +40,28 @@ li:hover {
     margin-left: auto;
     margin-right: auto; }
     .cookie-items img {
+      height: 200px;
+      padding: 40px; }
+
+  .cake-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 180%;
+    margin-left: auto;
+    margin-right: auto; }
+    .cake-items img {
+      height: 200px;
+      padding: 40px; }
+
+  .cupcake-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 180%;
+    margin-left: auto;
+    margin-right: auto; }
+    .cupcake-items img {
       height: 200px;
       padding: 40px; }
 

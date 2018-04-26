@@ -57,22 +57,37 @@ li:hover{
       height: 200px;
       padding: 40px;
     }
-    .butterscotch-cookie {
+    .cookie-thing {
       @extend %cookiecontent;
     }
-    .chocolatechip-cookie {
+}
+.cake-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 180%;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      height: 200px;
+      padding: 40px;
+    }
+    .cake-thing {
       @extend %cookiecontent;
     }
-    .whoopie-cookie {
-      @extend %cookiecontent;
+}
+.cupcake-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 180%;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      height: 200px;
+      padding: 40px;
     }
-    .sandwich-cookie {
-      @extend %cookiecontent;
-    }
-    .sugar-cookie {
-      @extend %cookiecontent;
-    }
-    .whitechip-cookie {
+    .cupcake-thing {
       @extend %cookiecontent;
     }
 }
