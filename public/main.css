@@ -80,9 +80,9 @@ li:hover .navtext {
       padding: 40px; }
 
   .catalogue {
-    height: 900px;
+    height: 800px;
     display: block;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto; }
 
@@ -164,7 +164,8 @@ body {
 .ul-nav {
   float: left;
   position: fixed;
-  margin-top: 30%; }
+  margin-top: 30%;
+  z-index: 1; }
 
 .left-top {
   transform: scaleX(-1);
@@ -219,13 +220,14 @@ input[type=submit] {
   to {
     height: 230px; } }
 .footer {
-  margin-bottom: 0;
   background-color: #ffe6e6;
   border: solid 2px #e6e6ff;
   width: 100%;
-  justify-content: center;
   text-align: center;
-  height: 70px; }
+  height: 70px;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
 
 .footer-items {
   display: inline-block;
@@ -237,5 +239,8 @@ input[type=submit] {
 
 .footer-items:hover {
   cursor: pointer; }
+
+h6 {
+  font-size: 130%; }
 
 /*# sourceMappingURL=main.css.map */

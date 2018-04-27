@@ -108,9 +108,9 @@ li:hover .navtext {
     }
 }
 .catalogue {
-  height: 900px;
+  height: 800px;
   display: block;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -124,7 +124,6 @@ li:hover .navtext {
   .form {
     margin: 0;
     position: absolute;
-    // top: 60%;
     margin-top: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -205,6 +204,7 @@ body{
   float: left;
   position: fixed;
   margin-top: 30%;
+  z-index: 1;
 }
 .left-top {
   transform: scaleX(-1);
@@ -280,14 +280,14 @@ input[type=submit] {
   to{height: 230px;}
 }
 .footer {
-  margin-bottom: 0;
-  // position: fixed;
   background-color: $pink;
   border: solid 2px $lavender;
   width: 100%;
-  justify-content: center;
   text-align: center;
   height: 70px;
+  position: absolute;
+  left: 0;
+  bottom:0;
 }
 .footer-items {
   display: inline-block;
@@ -300,4 +300,7 @@ input[type=submit] {
 }
 .footer-items:hover {
   cursor: pointer;
+}
+h6 {
+  font-size: 130%;
 }
